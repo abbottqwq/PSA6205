@@ -18,27 +18,28 @@ public class Q4LeetCode708 {
         }
     }
 
-    ;
 
     public Node insert(Node head, int insertVal) {
         if (head == null) {
             head = new Node(insertVal);
+            head.next = head;
             return head;
         }
+
         Node p = head;
-        Node prev = p;
+        Node max = head;
         boolean isInserted = false;
         do {
-            if (insertVal < p.val) {
+            if (p.val <= insertVal && p.next.val >= insertVal) {
                 isInserted = true;
-                Node q = new Node(insertVal, prev.next);
-                prev.next = q;
-                p = p.next;
-            } else {
-                prev = p;
-                p = p.next;
+                p.next = new Node(insertVal, p.next);
             }
-        } while (isInserted || p == head);
+            if (max.val <= p.val) max = p;
+            p = p.next;
+        } while (p != head && !isInserted);
+        if (!isInserted) {
+            max.next = new Node(insertVal, max.next);
+        }
         return head;
     }
 }
