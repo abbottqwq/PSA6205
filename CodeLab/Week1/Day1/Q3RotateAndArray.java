@@ -1,4 +1,4 @@
-package Week1;
+package CodeLab.Week1.Day1;
 
 public class Q3RotateAndArray {
     public void rotateAndArray(int[] nums, int k) {

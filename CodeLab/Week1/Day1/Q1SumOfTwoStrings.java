@@ -1,4 +1,4 @@
-package Week1;
+package CodeLab.Week1.Day1;
 
 public class Q1SumOfTwoStrings {
     public String addString(String num1, String num2) {

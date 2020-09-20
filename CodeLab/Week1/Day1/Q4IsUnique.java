@@ -1,4 +1,4 @@
-package Week1;
+package CodeLab.Week1.Day1;
 
 import java.util.HashSet;
 

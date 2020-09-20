@@ -1,6 +1,6 @@
-package Week1.Day2;
+package CodeLab.Week1.Day2;
 
-public class Q1_LeetCode19 {
+public class Q1LeetCode19 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode p = head;
         ListNode q = head;

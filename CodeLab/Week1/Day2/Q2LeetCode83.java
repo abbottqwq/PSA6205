@@ -1,7 +1,7 @@
-package Week1.Day2;
+package CodeLab.Week1.Day2;
 
 
-public class Q2_LeetCode83 {
+public class Q2LeetCode83 {
     public ListNode deleteDuplicates(ListNode head) {
         ListNode p = head;
         while (p != null && p.next != null) {

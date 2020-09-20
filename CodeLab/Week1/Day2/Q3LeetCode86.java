@@ -1,4 +1,4 @@
-package Week1.Day2;
+package CodeLab.Week1.Day2;
 
 public class Q3LeetCode86 {
     public ListNode partition(ListNode head, int x) {
