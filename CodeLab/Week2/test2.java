@@ -5,5 +5,6 @@ public class test2 {
         System.out.println("hellow world;");
         System.out.println("dfdsfds");
         //nothing
+        //hi
     }
 }
