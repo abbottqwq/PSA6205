@@ -1,4 +1,4 @@
-package CodeLab.Week2;
+
 
 import java.util.ArrayList;
 import java.util.Stack;
@@ -9,7 +9,6 @@ public class Q8LeetCode1019 {
             Stack<Integer> stack = new Stack<Integer>();
             int len = 0;
             ArrayList<Integer> list = new ArrayList<Integer>();
-            list.get(index)
             ListNode p = head;
             while (p != null) {
                 stack.push(p.val);

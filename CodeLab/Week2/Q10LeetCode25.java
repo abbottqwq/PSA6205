@@ -1,4 +1,4 @@
-package CodeLab.Week2;
+
 
 public class Q10LeetCode25 {
     class Solution {
