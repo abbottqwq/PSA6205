@@ -1,6 +1,6 @@
 package CodeLab.Week2;
 
-public class Q6LeetCode25 {
+public class Q10LeetCode25 {
     class Solution {
         public ListNode reverse1Group(ListNode head, int k) {
             if (k <= 1)
