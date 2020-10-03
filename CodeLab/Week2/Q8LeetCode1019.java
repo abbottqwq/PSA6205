@@ -1,5 +1,4 @@
 
-
 import java.util.ArrayList;
 import java.util.Stack;
 
@@ -11,23 +10,25 @@ public class Q8LeetCode1019 {
             ArrayList<Integer> list = new ArrayList<Integer>();
             ListNode p = head;
             while (p != null) {
-                stack.push(p.val);
+                list.add(p.val);
                 p = p.next;
                 len++;
             }
             int[] res = new int[len];
-            int max = -1;
-            int index = len - 1;
-            while (!stack.isEmpty()) {
-                int val = stack.pop();
-                if (val > max) {
-                    res[index] = 0;
-                    max = val;
+
+            for (int i = list.size() - 1; i >= 0; i--) {
+                int x = list.get(i);
+                if (stack.empty()) {
+                    stack.push(x);
+                    continue;
                 } else {
-                    res[index] = max;
+                    while (!stack.empty() && stack.peek() <= x)
+                        stack.pop();
+                    res[i] = stack.empty() ? 0 : stack.peek();
+                    stack.push(x);
                 }
-                index--;
             }
+
             return res;
         }
     }

@@ -1,5 +1,3 @@
-package CodeLab.Week2;
-
 public class Q1LeetCode328 {
     class Solution {
         public ListNode oddEvenList(ListNode head) {

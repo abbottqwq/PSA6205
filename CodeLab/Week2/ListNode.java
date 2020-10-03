@@ -1,5 +1,3 @@
-package CodeLab.Week2;
-
 public class ListNode {
     int val;
     ListNode next;
